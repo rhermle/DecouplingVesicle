@@ -71,7 +71,8 @@ for i=1:M
     end
 end
 
-A = zeros(M*M,M*M);
+%A = zeros(M*M,M*M);
+A = sparse([],[],[],M*M,M*M,5*M*M);
 b = zeros(M*M,1);
 
 %interior points
@@ -183,7 +184,8 @@ end
 
 %M=30;
 
-A = zeros(M*M,M*M);
+%A = zeros(M*M,M*M);
+A = sparse([],[],[],M*M,M*M,5*M*M);
 b = zeros(M*M,1);
 
 %interior points
@@ -251,7 +253,8 @@ end
 
 %M=30;
 
-A = zeros(M*M,M*M);
+%A = zeros(M*M,M*M);
+A = sparse([],[],[],M*M,M*M,5*M*M);
 b = zeros(M*M,1);
 
 %interior points
