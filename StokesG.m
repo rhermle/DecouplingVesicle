@@ -96,10 +96,11 @@ streamline(x,y,u,v,1.0,0.7);
 
 %%%%%%%%%%%%%benchmark%%%%%%%%%%%%%%%%
 REPS = 10;
-num = [25 50 75 100 200 400];
+num = [25 50 75 100 200];
 tic;
 for i = 1:length(num)
     for j = 1:REPS
+        j
         [ p u v x y] = Stokes2DG(width, height, R, L, g, num(i), p0, mu, 0);
     end
     averageTime(i) = toc / REPS;
